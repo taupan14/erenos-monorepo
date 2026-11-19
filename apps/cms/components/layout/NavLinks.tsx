@@ -12,11 +12,11 @@ const NAV: Item[] = [
   { href: "/konten", label: "Konten", ready: true },
   { href: "/media", label: "Media", ready: true },
   { href: "/admisi", label: "Admisi", ready: true, roles: ["super_admin"] },
-  { href: "/inquiry", label: "Inquiry", ready: false, roles: ["super_admin"] },
+  { href: "/inquiry", label: "Inquiry", ready: true, roles: ["super_admin"] },
   {
     href: "/pelanggan",
     label: "Pelanggan",
-    ready: false,
+    ready: true,
     roles: ["super_admin"],
   },
   {

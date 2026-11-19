@@ -22,7 +22,7 @@ export type HeroSlideView = {
 };
 
 const PLACEHOLDER_BG = ["#27468f", "#1f3a78", "#33569e"];
-const AUTOPLAY_MS = 6500;
+const AUTOPLAY_MS = 6000;
 
 export function HeroSlider({ slides }: { slides: HeroSlideView[] }) {
   const { m } = useI18n();
@@ -72,7 +72,7 @@ export function HeroSlider({ slides }: { slides: HeroSlideView[] }) {
     <section
       aria-roledescription="carousel"
       aria-label={m.a11y.carousel}
-      className="relative h-[520px] overflow-hidden bg-[#27468f] text-white md:h-[560px]"
+      className="relative h-[520px] overflow-hidden bg-[#27468f] text-white md:h-[720px]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
