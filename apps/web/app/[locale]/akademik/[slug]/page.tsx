@@ -214,7 +214,10 @@ export default async function LevelPage({ params }: Props) {
             <h2 className="font-serif text-[clamp(1.375rem,2.6vw,1.75rem)] font-bold text-white">
               {m.level.ctaTitle}
             </h2>
-            <Link href={localeHref(locale, "/admisi")} className={btnGold}>
+            <Link
+              href={`${localeHref(locale, "/admisi")}?jenjang=${slug}`}
+              className={btnGold}
+            >
               {m.level.ctaButton} {short} →
             </Link>
           </div>

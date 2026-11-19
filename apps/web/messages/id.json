@@ -231,6 +231,30 @@
     "contact": "Tidak menemukan jawabannya?",
     "contactCta": "Hubungi Kami"
   },
+  "unsubscribe": {
+    "title": "Berhenti berlangganan?",
+    "text": "Anda tidak akan lagi menerima kabar dan kegiatan terbaru dari Erenos. Anda dapat berlangganan kembali kapan saja lewat footer website.",
+    "button": "Ya, berhenti berlangganan",
+    "working": "Memproses…",
+    "done": "Anda sudah berhenti berlangganan.",
+    "doneText": "Kami tidak akan mengirim kabar terbaru lagi. Terima kasih telah menyimak Erenos.",
+    "already": "Anda sudah berhenti berlangganan sebelumnya.",
+    "invalid": "Tautan tidak valid atau sudah kedaluwarsa.",
+    "invalidText": "Periksa kembali tautan di email Anda, atau hubungi kami bila masalah berlanjut.",
+    "error": "Terjadi kesalahan. Silakan coba lagi.",
+    "home": "Kembali ke Beranda"
+  },
+  "errorPage": {
+    "code": "Kesalahan 500",
+    "title": "Terjadi kesalahan",
+    "text": "Maaf, halaman ini sedang bermasalah. Silakan coba lagi, atau kembali ke beranda.",
+    "retry": "Coba lagi",
+    "back": "Kembali ke Beranda",
+    "reference": "Kode referensi"
+  },
+  "loading": {
+    "label": "Memuat halaman…"
+  },
   "notFound": {
     "code": "Kesalahan 404",
     "title": "Halaman tidak ditemukan",
@@ -277,6 +301,10 @@
     "faq": {
       "title": "Pertanyaan",
       "highlight": "Umum"
+    },
+    "unsubscribe": {
+      "title": "Berhenti",
+      "highlight": "Berlangganan"
     }
   },
   "seo": {
@@ -289,7 +317,8 @@
     "contact": "Hubungi Erenos Christian School: alamat, telepon, email, dan formulir pesan.",
     "privacy": "Cara Erenos Christian School mengumpulkan, menggunakan, dan melindungi data pribadi.",
     "terms": "Syarat dan ketentuan penggunaan website Erenos Christian School.",
-    "faq": "Jawaban atas pertanyaan yang sering diajukan seputar Erenos Christian School dan penerimaan siswa baru."
+    "faq": "Jawaban atas pertanyaan yang sering diajukan seputar Erenos Christian School dan penerimaan siswa baru.",
+    "unsubscribe": "Berhenti menerima kabar dan kegiatan terbaru dari Erenos Christian School."
   },
   "about": {
     "profile": "Profil sekolah",

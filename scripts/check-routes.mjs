@@ -30,6 +30,11 @@ const EXPECTED = [
   [`${L}/faq/page.tsx`, "FaqPage", "/id/faq"],
   [`${L}/kebijakan-privasi/page.tsx`, "PrivacyPage", "/id/kebijakan-privasi"],
   [`${L}/syarat-ketentuan/page.tsx`, "TermsPage", "/id/syarat-ketentuan"],
+  [
+    `${L}/berhenti-berlangganan/page.tsx`,
+    "UnsubscribePage",
+    "/id/berhenti-berlangganan",
+  ],
   ["apps/web/proxy.ts", "export function proxy", "(pengalihan /  → /id)"],
   ["apps/web/app/sitemap.ts", "sitemap", "/sitemap.xml"],
   ["apps/web/app/robots.ts", "robots", "/robots.txt"],

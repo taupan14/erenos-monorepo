@@ -1,6 +1,14 @@
 "use client";
 
-import { useId, useState, type FormEvent, type ReactNode } from "react";
+import {
+  Suspense,
+  useId,
+  useState,
+  type FormEvent,
+  type ReactNode,
+  type SelectHTMLAttributes,
+} from "react";
+import { useSearchParams } from "next/navigation";
 import { ACADEMIC_LEVELS } from "@erenos/shared";
 import { cn } from "@/lib/cn";
 import { useI18n } from "@/components/i18n/I18nProvider";
@@ -10,6 +18,32 @@ type Variant = "admission" | "contact";
 type Status = "idle" | "loading" | "ok" | "error";
 
 const ENDPOINT = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/submit-inquiry`;
+
+function LevelOptions() {
+  const { m } = useI18n();
+  return (
+    <>
+      <option value="">{m.forms.levelPlaceholder}</option>
+      {ACADEMIC_LEVELS.map((l) => (
+        <option key={l.code} value={l.code}>
+          {m.levels.items[l.code].short}
+        </option>
+      ))}
+    </>
+  );
+}
+
+/** Pilihan jenjang yang terisi otomatis dari ?jenjang=<slug> (mis. /admisi?jenjang=sd). */
+function PresetLevelSelect(props: SelectHTMLAttributes<HTMLSelectElement>) {
+  const params = useSearchParams();
+  const preset =
+    ACADEMIC_LEVELS.find((l) => l.slug === params.get("jenjang"))?.code ?? "";
+  return (
+    <select {...props} defaultValue={preset}>
+      <LevelOptions />
+    </select>
+  );
+}
 
 /**
  * Formulir → Edge Function `submit-inquiry`.
@@ -158,6 +192,28 @@ export function InquiryForm({ variant }: { variant: Variant }) {
     "aria-describedby": errors[name] ? `${uid}-${name}-err` : undefined,
   });
 
+  const SelectWrapper = ({ children }: { children: ReactNode }) => (
+    <div className="relative">
+      {children}
+      {/* Ikon panah kustom - atur jarak kanan lewat class right-* */}
+      <span className="pointer-events-none absolute inset-y-0 right-3.5 flex items-center text-gray-500">
+        <svg
+          className="h-4 w-4"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+      </span>
+    </div>
+  );
+
   return (
     <form onSubmit={onSubmit} className="grid gap-4">
       <div className={cn("grid gap-4", contact && "sm:grid-cols-2")}>
@@ -225,14 +281,25 @@ export function InquiryForm({ variant }: { variant: Variant }) {
               label={m.forms.level}
               error={errors.interested_level}
             >
-              <select {...common("interested_level")} defaultValue="">
-                <option value="">{m.forms.levelPlaceholder}</option>
-                {ACADEMIC_LEVELS.map((l) => (
-                  <option key={l.code} value={l.code}>
-                    {m.levels.items[l.code].short}
-                  </option>
-                ))}
-              </select>
+              <SelectWrapper>
+                {/* useSearchParams butuh Suspense agar halaman Admisi tetap statis */}
+                <Suspense
+                  fallback={
+                    <select
+                      {...common("interested_level")}
+                      className={`${common("interested_level").className} appearance-none bg-none pr-10`}
+                      defaultValue=""
+                    >
+                      <LevelOptions />
+                    </select>
+                  }
+                >
+                  <PresetLevelSelect
+                    {...common("interested_level")}
+                    className={`${common("interested_level").className} appearance-none bg-none pr-10`}
+                  />
+                </Suspense>
+              </SelectWrapper>
             </Field>
           </div>
         </>

@@ -235,6 +235,30 @@
     "contact": "Can't find your answer?",
     "contactCta": "Contact Us"
   },
+  "unsubscribe": {
+    "title": "Unsubscribe?",
+    "text": "You will no longer receive news and updates from Erenos. You can subscribe again at any time from the website footer.",
+    "button": "Yes, unsubscribe",
+    "working": "Processing…",
+    "done": "You have been unsubscribed.",
+    "doneText": "We will not send you further updates. Thank you for following Erenos.",
+    "already": "You were already unsubscribed.",
+    "invalid": "This link is invalid or has expired.",
+    "invalidText": "Please check the link in your email, or contact us if the problem continues.",
+    "error": "Something went wrong. Please try again.",
+    "home": "Back to Home"
+  },
+  "errorPage": {
+    "code": "Error 500",
+    "title": "Something went wrong",
+    "text": "Sorry, this page ran into a problem. Please try again, or return to the home page.",
+    "retry": "Try again",
+    "back": "Back to Home",
+    "reference": "Reference"
+  },
+  "loading": {
+    "label": "Loading page…"
+  },
   "notFound": {
     "code": "Error 404",
     "title": "Page not found",
@@ -281,6 +305,10 @@
     "faq": {
       "title": "Frequently Asked",
       "highlight": "Questions"
+    },
+    "unsubscribe": {
+      "title": "Newsletter",
+      "highlight": "Unsubscribe"
     }
   },
   "seo": {
@@ -293,7 +321,8 @@
     "contact": "Contact Erenos Christian School: address, phone, email, and message form.",
     "privacy": "How Erenos Christian School collects, uses and protects personal data.",
     "terms": "Terms and conditions for using the Erenos Christian School website.",
-    "faq": "Answers to frequently asked questions about Erenos Christian School and admissions."
+    "faq": "Answers to frequently asked questions about Erenos Christian School and admissions.",
+    "unsubscribe": "Stop receiving news and updates from Erenos Christian School."
   },
   "about": {
     "profile": "School profile",

@@ -77,7 +77,11 @@ export default async function RootLayout({ children, params }: Props) {
   const schoolName = settings?.school_name ?? "Erenos Christian School";
 
   return (
-    <html lang={locale} className={`${inter.variable} ${playfair.variable}`}>
+    <html
+      lang={locale}
+      className={`${inter.variable} ${playfair.variable}`}
+      data-scroll-behavior="smooth"
+    >
       <head>
         {/* Tanpa JavaScript, jangan sembunyikan konten yang menunggu animasi muncul */}
         <noscript>

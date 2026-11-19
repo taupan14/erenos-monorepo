@@ -22,7 +22,8 @@ export type PageKey =
   | "contact"
   | "privacy"
   | "terms"
-  | "faq";
+  | "faq"
+  | "unsubscribe";
 
 /** Metadata standar halaman dalam: judul dari kamus, deskripsi SEO, canonical + hreflang. */
 export function pageMetadata(

@@ -9,6 +9,7 @@ import { localeHref } from "@/lib/i18n";
 import { loc } from "@/lib/localize";
 import { getMessages } from "@/lib/messages";
 import { pageMetadata, resolveLocale } from "@/lib/seo";
+import { SocialIcon, type SocialIconName } from "@/components/ui/SocialIcon";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -53,12 +54,26 @@ export default async function ContactPage({ params }: Props) {
   const email = s?.email ?? null;
   const waUrl = whatsappUrl(wa);
   const map = mapsEmbedSrc(s?.maps_embed_url);
-  const socials = [
-    { label: "Facebook", short: "fb", url: s?.facebook_url },
-    { label: "Instagram", short: "ig", url: s?.instagram_url },
-    { label: "YouTube", short: "yt", url: s?.youtube_url },
-    { label: "TikTok", short: "tt", url: s?.tiktok_url },
-  ].filter((x): x is { label: string; short: string; url: string } => !!x.url);
+  const socials = (
+    [
+      { label: "Facebook", icon: "facebook", url: s?.facebook_url },
+      { label: "YouTube", icon: "youtube", url: s?.youtube_url },
+      { label: "Instagram", icon: "instagram", url: s?.instagram_url },
+      { label: "TikTok", icon: "tiktok", url: s?.tiktok_url },
+    ] as {
+      label: string;
+      icon: SocialIconName;
+      url: string | null | undefined;
+    }[]
+  ).filter(
+    (s): s is { label: string; icon: SocialIconName; url: string } => !!s.url,
+  );
+  // const socials = [
+  //   { label: "Facebook", short: "fb", url: s?.facebook_url },
+  //   { label: "Instagram", short: "ig", url: s?.instagram_url },
+  //   { label: "YouTube", short: "yt", url: s?.youtube_url },
+  //   { label: "TikTok", short: "tt", url: s?.tiktok_url },
+  // ].filter((x): x is { label: string; short: string; url: string } => !!x.url);
 
   return (
     <>
@@ -166,7 +181,8 @@ export default async function ContactPage({ params }: Props) {
                         aria-label={x.label}
                         className="flex size-10 items-center justify-center rounded-full border-[1.5px] border-accent text-xs font-bold text-accent transition-colors hover:bg-accent hover:text-deep"
                       >
-                        {x.short}
+                        {/* {x.short} */}
+                        <SocialIcon name={x.icon} size={17} />
                       </a>
                     ))}
                   </div>
@@ -202,7 +218,7 @@ export default async function ContactPage({ params }: Props) {
           {m.contact.benefits.map((b, i) => (
             <li key={b.title}>
               <Reveal delay={i * 100} className="flex items-center gap-4">
-                <span className="flex size-14 shrink-0 items-center justify-center rounded-full bg-accent/25 text-deep ring-1 ring-accent/50">
+                <span className="flex size-14 shrink-0 items-center justify-center rounded-full bg-accent text-deep ring-1 ring-accent/50">
                   <Icon name={BENEFIT_ICONS[i] ?? "book"} size={26} />
                 </span>
                 <div>
