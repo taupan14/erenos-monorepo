@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #2f55a4;
+  --primary-glow: #4f7bda;
+  --deep: #14295a;
+  --accent: #e0ae2e;
+  --soft: #eef3fb;
+  --ink: #1a2540;
+  --muted: #4a5672;
+  --line: #dce5f5;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-glow: var(--primary-glow);
+  --color-deep: var(--deep);
+  --color-accent: var(--accent);
+  --color-soft: var(--soft);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
+}
+
+body {
+  background: var(--soft);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+/* Tampilan isi editor rich-text (Tiptap) */
+.editor-content {
+  line-height: 1.7;
+}
+.editor-content p {
+  margin: 0.7em 0;
+}
+.editor-content h2,
+.editor-content h3,
+.editor-content h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--deep);
+  margin: 1.2em 0 0.4em;
+}
+.editor-content h2 {
+  font-size: 1.5rem;
+}
+.editor-content h3 {
+  font-size: 1.25rem;
+}
+.editor-content h4 {
+  font-size: 1.1rem;
+}
+.editor-content ul {
+  list-style: disc;
+  padding-left: 1.4em;
+}
+.editor-content ol {
+  list-style: decimal;
+  padding-left: 1.4em;
+}
+.editor-content blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1em;
+  color: var(--muted);
+  margin: 1em 0;
+}
+.editor-content a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.editor-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.8em 0;
+}
+.editor-content img.ProseMirror-selectednode {
+  outline: 2px solid var(--primary);
+}

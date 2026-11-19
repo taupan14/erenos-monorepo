@@ -1,0 +1,20 @@
+{
+  "name": "erenos-school",
+  "private": true,
+  "packageManager": "pnpm@12.18.0",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
+    "dev:web": "pnpm --filter @erenos/web dev",
+    "dev:cms": "pnpm --filter @erenos/cms dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "db:start": "supabase start",
+    "db:reset": "supabase db reset",
+    "db:push": "supabase db push",
+    "db:types": "supabase gen types typescript --local > packages/shared/src/database.types.ts",
+    "check:routes": "node scripts/check-routes.mjs"
+  }
+}

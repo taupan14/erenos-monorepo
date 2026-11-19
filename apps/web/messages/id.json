@@ -1,0 +1,434 @@
+{
+  "meta": {
+    "description": "Sekolah Kristen Erenos — Iman, Ilmu dan Damai Sejahtera. Jenjang KB–TK, SD, SMP, dan SMA.",
+    "homeTitle": "Erenos Christian School — Iman, Ilmu dan Damai Sejahtera"
+  },
+  "a11y": {
+    "skip": "Lewati ke konten",
+    "mainMenu": "Menu utama",
+    "mobileMenu": "Menu seluler",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "language": "Pilih bahasa",
+    "homeLink": "{name} — beranda",
+    "carousel": "Sorotan sekolah",
+    "slideOf": "Slide {n} dari {total}",
+    "prevSlide": "Slide sebelumnya",
+    "nextSlide": "Slide berikutnya",
+    "goToSlide": "Ke slide {n}",
+    "breadcrumb": "Navigasi remah roti"
+  },
+  "topbar": {
+    "badge": "Pendaftaran Dibuka"
+  },
+  "placeholder": {
+    "address": "[Alamat sekolah]",
+    "phone": "[Telepon]",
+    "email": "[Email]",
+    "hours": "[Jam layanan]"
+  },
+  "nav": {
+    "title": "Sekolah Erenos",
+    "home": "Beranda",
+    "about": "Tentang",
+    "academics": "Akademik",
+    "facilities": "Fasilitas",
+    "news": "Berita",
+    "admission": "Admisi",
+    "contact": "Kontak",
+    "register": "Daftar"
+  },
+  "mega": {
+    "title": "Jenjang Pendidikan",
+    "text": "Satu perjalanan iman dan ilmu dari KB hingga SMA.",
+    "photo": "Foto siswa"
+  },
+  "hero": {
+    "defaults": [
+      {
+        "title": "Iman, Ilmu dan",
+        "highlight": "Damai Sejahtera",
+        "description": "Di Erenos kami menumbuhkan pikiran muda dengan nilai-nilai Kristiani, pembelajaran modern, dan kesempatan yang tak terbatas.",
+        "primaryLabel": "Info Pendaftaran",
+        "primaryHref": "/admisi",
+        "secondaryLabel": "Jelajahi Kampus",
+        "secondaryHref": "/fasilitas"
+      },
+      {
+        "title": "Bertumbuh dalam",
+        "highlight": "Ilmu & Karakter",
+        "description": "Lingkungan belajar yang hangat, dengan guru yang membimbing setiap anak sesuai potensinya.",
+        "primaryLabel": "Lihat Jenjang",
+        "primaryHref": "/akademik",
+        "secondaryLabel": "Tentang Kami",
+        "secondaryHref": "/tentang"
+      }
+    ]
+  },
+  "features": [
+    {
+      "title": "Kelas Nyaman",
+      "text": "Belajar dengan dukungan teknologi"
+    },
+    {
+      "title": "Guru Berdedikasi",
+      "text": "Pendidik yang membimbing"
+    },
+    {
+      "title": "Pembinaan Iman",
+      "text": "Nilai Kristiani sehari-hari"
+    },
+    {
+      "title": "Tumbuh Utuh",
+      "text": "Ilmu, karakter, dan iman"
+    },
+    {
+      "title": "Fasilitas Lengkap",
+      "text": "Lab, perpustakaan, olahraga"
+    }
+  ],
+  "welcome": {
+    "kicker": "Selamat datang di",
+    "excerpt": "[Ringkasan profil sekolah: sekolah Kristen yang menumbuhkan ilmu, karakter, dan iman, dari KB hingga SMA.]",
+    "button": "Selengkapnya",
+    "photoAlt": "Siswa dan gedung sekolah",
+    "photoLabel": "Foto: siswa & gedung sekolah"
+  },
+  "stats": {
+    "kicker": "Erenos dalam angka",
+    "title": "Tumbuh bersama, terukur dan nyata",
+    "sample": "Angka contoh — isi di CMS sebelum website dipublikasikan",
+    "items": [
+      {
+        "label": "Murid Aktif",
+        "text": "Siswa aktif di seluruh jenjang, KB–TK hingga SMA."
+      },
+      {
+        "label": "Guru Bersertifikat",
+        "text": "Pendidik yang memegang sertifikat pendidik profesional."
+      },
+      {
+        "label": "Kelulusan",
+        "text": "Persentase kelulusan seluruh jenjang pada tahun ajaran terakhir."
+      }
+    ]
+  },
+  "levels": {
+    "kicker": "Akademik",
+    "title": "Jelajahi. Belajar. Unggul.",
+    "tag": "Jenjang",
+    "cta": "Selengkapnya",
+    "photo": "Foto {name}",
+    "items": {
+      "kb_tk": {
+        "name": "Kelompok Bermain & TK",
+        "short": "KB–TK",
+        "summary": "Belajar lewat bermain dan mengenal kasih Tuhan.",
+        "chips": [
+          "Bermain & eksplorasi",
+          "Pembinaan karakter",
+          "Pengenalan iman"
+        ]
+      },
+      "sd": {
+        "name": "Sekolah Dasar",
+        "short": "SD",
+        "summary": "Fondasi akademik dan kebiasaan baik.",
+        "chips": ["Literasi & numerasi", "Karakter & iman", "Ekstrakurikuler"]
+      },
+      "smp": {
+        "name": "Sekolah Menengah Pertama",
+        "short": "SMP",
+        "summary": "Menemukan minat dan membangun jati diri.",
+        "chips": ["Minat & bakat", "Kepemimpinan", "Pelayanan"]
+      },
+      "sma": {
+        "name": "Sekolah Menengah Atas",
+        "short": "SMA",
+        "summary": "Bersiap melangkah ke masa depan dengan iman.",
+        "chips": ["Persiapan kuliah", "Kepemimpinan", "Pelayanan"]
+      }
+    }
+  },
+  "facilities": {
+    "kicker": "Fasilitas",
+    "title": "Infrastruktur Berkelas",
+    "all": "Semua Fasilitas",
+    "photo": "Foto {name}"
+  },
+  "studentLife": {
+    "kicker": "Kehidupan siswa",
+    "title": "Belajar di Luar Kelas",
+    "all": "Lihat Galeri",
+    "photo": "Foto kegiatan siswa {n}",
+    "alt": "Kegiatan siswa"
+  },
+  "news": {
+    "kicker": "Berita & Kegiatan",
+    "title": "Kabar Terbaru",
+    "all": "Semua Berita",
+    "photo": "Foto"
+  },
+  "cta": {
+    "eyebrow": "Penerimaan Siswa Baru",
+    "title": "Bergabunglah dengan keluarga Erenos",
+    "button": "Info Pendaftaran",
+    "closedEyebrow": "Kenali Erenos",
+    "closedTitle": "Ingin mengenal Erenos lebih dekat?",
+    "closedButton": "Hubungi Kami",
+    "model": "Foto model (PNG tanpa latar)",
+    "text": "Berikan awal terbaik bagi putra-putri Anda. Kenali alur, persyaratan, dan hubungi tim admisi kami.",
+    "whatsapp": "Hubungi via WhatsApp",
+    "chooseLevel": "Pilih jenjang"
+  },
+  "footer": {
+    "links": "Tautan",
+    "academics": "Akademik",
+    "info": "Informasi",
+    "contact": "Kontak",
+    "admissionFlow": "Alur Pendaftaran",
+    "requirements": "Persyaratan",
+    "gallery": "Galeri",
+    "cardTitle": "Bergabunglah dalam Perjalanan Kami",
+    "cardText": "Daftar untuk menerima kabar dan kegiatan terbaru dari Erenos.",
+    "sealLine1": "Sekolah Kristen",
+    "sealLine2": "Christian School",
+    "rights": "© {year} {name}. Hak cipta dilindungi.",
+    "motto": "Iman · Ilmu · Damai Sejahtera",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat & Ketentuan",
+    "faq": "FAQ",
+    "social": "Ikuti kami",
+    "newTab": "(buka di tab baru)",
+    "stats": {
+      "todayVisitors": "Pengunjung Hari Ini",
+      "todayViews": "Tayangan Hari Ini",
+      "totalVisitors": "Total Pengunjung",
+      "totalViews": "Total Tayangan"
+    }
+  },
+  "newsletter": {
+    "label": "Alamat email",
+    "placeholder": "Alamat email",
+    "submit": "Berlangganan",
+    "sending": "Mengirim…",
+    "ok": "Terima kasih! Anda sudah terdaftar.",
+    "invalid": "Periksa kembali alamat email Anda.",
+    "tooMany": "Terlalu banyak percobaan. Coba lagi nanti.",
+    "error": "Terjadi kesalahan. Silakan coba lagi.",
+    "network": "Tidak dapat terhubung. Periksa koneksi Anda."
+  },
+  "whatsapp": {
+    "label": "Chat via WhatsApp",
+    "text": "Halo, saya ingin bertanya tentang Erenos Christian School."
+  },
+  "legal": {
+    "placeholder": "[Isi halaman ini akan segera tersedia.]"
+  },
+  "faqPage": {
+    "intro": "Jawaban atas pertanyaan yang paling sering kami terima.",
+    "empty": "Pertanyaan umum akan segera tersedia.",
+    "contact": "Tidak menemukan jawabannya?",
+    "contactCta": "Hubungi Kami"
+  },
+  "notFound": {
+    "code": "Kesalahan 404",
+    "title": "Halaman tidak ditemukan",
+    "text": "Halaman yang Anda cari belum tersedia atau sudah dipindahkan. Silakan kembali ke beranda.",
+    "back": "Kembali ke Beranda"
+  },
+  "pages": {
+    "about": {
+      "title": "Tentang",
+      "highlight": "Kami"
+    },
+    "academics": {
+      "title": "Jenjang",
+      "highlight": "Pendidikan"
+    },
+    "facilities": {
+      "title": "Fasilitas",
+      "highlight": "Sekolah"
+    },
+    "news": {
+      "title": "Berita &",
+      "highlight": "Kegiatan"
+    },
+    "gallery": {
+      "title": "Galeri",
+      "highlight": "Foto"
+    },
+    "admission": {
+      "title": "Penerimaan",
+      "highlight": "Siswa Baru"
+    },
+    "contact": {
+      "title": "Hubungi",
+      "highlight": "Kami"
+    },
+    "privacy": {
+      "title": "Kebijakan",
+      "highlight": "Privasi"
+    },
+    "terms": {
+      "title": "Syarat &",
+      "highlight": "Ketentuan"
+    },
+    "faq": {
+      "title": "Pertanyaan",
+      "highlight": "Umum"
+    }
+  },
+  "seo": {
+    "about": "Kenali Erenos Christian School: profil, visi dan misi, nilai Kristiani, sambutan kepala sekolah, dan sejarah.",
+    "academics": "Jenjang pendidikan Erenos: KB–TK, SD, SMP, dan SMA dalam satu perjalanan iman dan ilmu.",
+    "facilities": "Fasilitas Erenos Christian School yang mendukung anak bertumbuh.",
+    "news": "Berita dan kegiatan terbaru dari Erenos Christian School.",
+    "gallery": "Galeri foto kegiatan Erenos Christian School.",
+    "admission": "Informasi penerimaan siswa baru Erenos: alur, persyaratan, dan pertanyaan umum.",
+    "contact": "Hubungi Erenos Christian School: alamat, telepon, email, dan formulir pesan.",
+    "privacy": "Cara Erenos Christian School mengumpulkan, menggunakan, dan melindungi data pribadi.",
+    "terms": "Syarat dan ketentuan penggunaan website Erenos Christian School.",
+    "faq": "Jawaban atas pertanyaan yang sering diajukan seputar Erenos Christian School dan penerimaan siswa baru."
+  },
+  "about": {
+    "profile": "Profil sekolah",
+    "profilePlaceholder": "[Profil sekolah: tahun berdiri, yayasan, jenjang, dan semangat pelayanan.]",
+    "photoSchool": "Foto sekolah",
+    "vision": "Visi",
+    "visionTitle": "Visi Erenos",
+    "visionPlaceholder": "[Teks visi sekolah]",
+    "mission": "Misi",
+    "missionTitle": "Misi Erenos",
+    "missionPlaceholder": "[Teks misi sekolah]",
+    "values": "Nilai Kristiani",
+    "valuesTitle": "Landasan pendidikan kami",
+    "message": "Sambutan kepala sekolah",
+    "messagePlaceholder": "[Sambutan kepala sekolah]",
+    "principal": "Kepala Sekolah",
+    "photoPrincipal": "Foto kepala sekolah",
+    "history": "Sejarah",
+    "historyTitle": "Perjalanan kami"
+  },
+  "level": {
+    "intro": "Pengantar",
+    "introTitle": "Fondasi yang kokoh sejak dini",
+    "introPlaceholder": "[Pengantar jenjang: tujuan pendidikan, suasana belajar, dan pendekatan guru.]",
+    "programs": "Program pembelajaran",
+    "programsTitle": "Yang dipelajari & dikembangkan",
+    "activities": "Kegiatan",
+    "activitiesTitle": "Kegiatan di {name}",
+    "ctaTitle": "Tertarik mendaftarkan putra-putri Anda?",
+    "ctaButton": "Lihat Admisi",
+    "listIntro": "Empat jenjang pendidikan dalam satu perjalanan iman dan ilmu.",
+    "tabs": "Pilih jenjang"
+  },
+  "facilitiesPage": {
+    "intro": "Lingkungan yang mendukung anak bertumbuh.",
+    "empty": "Informasi fasilitas akan segera tersedia.",
+    "emptyCta": "Hubungi Kami"
+  },
+  "newsPage": {
+    "all": "Semua",
+    "searchLabel": "Cari berita",
+    "searchPlaceholder": "Cari berita…",
+    "searchButton": "Cari",
+    "featured": "Berita utama",
+    "readMore": "Baca selengkapnya",
+    "empty": "Belum ada berita yang cocok.",
+    "emptyHint": "Coba kata kunci atau kategori lain.",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "pageOf": "Halaman {n} dari {total}",
+    "pagination": "Navigasi halaman",
+    "by": "Oleh {name}",
+    "back": "Kembali ke berita",
+    "share": "Bagikan",
+    "copyLink": "Salin tautan",
+    "copied": "Tersalin!",
+    "related": "Berita terkait",
+    "categories": "Kategori",
+    "languageNote": "Berita disajikan dalam bahasa Indonesia."
+  },
+  "gallery": {
+    "empty": "Album foto akan segera tersedia. Di bawah ini contoh tampilannya.",
+    "photoCount": "{n} foto",
+    "back": "Kembali ke galeri",
+    "open": "Buka foto {n}",
+    "close": "Tutup",
+    "prev": "Foto sebelumnya",
+    "next": "Foto berikutnya",
+    "counter": "{n} / {total}",
+    "dialog": "Penampil foto",
+    "thumbs": "Pilih foto",
+    "emptyAlbum": "Album ini belum berisi foto. Di bawah ini contoh tampilannya.",
+    "sampleTitle": "Album kegiatan {n}",
+    "samplePhoto": "Foto contoh {n}"
+  },
+  "admission": {
+    "flowTitle": "Alur pendaftaran",
+    "flowEmpty": "Informasi alur pendaftaran akan segera tersedia.",
+    "reqTitle": "Persyaratan",
+    "reqDoc": "Dokumen",
+    "reqEmpty": "Informasi persyaratan akan segera tersedia. Silakan hubungi tim admisi.",
+    "faqTitle": "Pertanyaan umum",
+    "notesTitle": "Catatan",
+    "closedNotice": "Pendaftaran saat ini belum dibuka. Anda tetap dapat mengirim pertanyaan.",
+    "formTitle": "Kirim Pertanyaan",
+    "formIntro": "Tim admisi kami akan menghubungi Anda."
+  },
+  "forms": {
+    "parentName": "Nama orang tua",
+    "name": "Nama",
+    "email": "Email",
+    "phone": "Telepon / WhatsApp",
+    "studentName": "Nama calon siswa",
+    "level": "Jenjang yang diminati",
+    "levelPlaceholder": "Pilih jenjang",
+    "subject": "Subjek",
+    "message": "Pesan",
+    "submitAdmission": "Kirim Pertanyaan",
+    "submitContact": "Kirim Pesan",
+    "sending": "Mengirim…",
+    "successTitle": "Terima kasih!",
+    "successText": "Pesan Anda sudah kami terima. Kami akan segera menghubungi Anda.",
+    "sendAnother": "Kirim pesan lain",
+    "errorGeneric": "Terjadi kesalahan. Silakan coba lagi.",
+    "errorNetwork": "Tidak dapat terhubung. Periksa koneksi Anda.",
+    "errorTooMany": "Terlalu banyak percobaan. Coba lagi nanti.",
+    "needContact": "Isi email atau nomor telepon/WhatsApp."
+  },
+  "contact": {
+    "eyebrow": "Hubungi kami",
+    "headingA": "Kirim Kami ",
+    "headingB": "Pesan Anda",
+    "namePlaceholder": "Contoh: Budi Santoso",
+    "emailPlaceholder": "nama@contoh.com",
+    "phonePlaceholder": "+62 …",
+    "subjectPlaceholder": "Tulis subjek",
+    "messagePlaceholder": "Tulis pesan Anda di sini…",
+    "address": "Alamat",
+    "contactTitle": "Kontak",
+    "phoneLabel": "Telepon",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Email",
+    "hours": "Jam Layanan",
+    "connect": "Terhubung",
+    "mapTitle": "Peta lokasi sekolah",
+    "mapPlaceholder": "Peta Google Maps — isi URL embed di pengaturan situs",
+    "benefits": [
+      {
+        "title": "Informasi Lengkap",
+        "text": "Pertanyaan seputar program dan pendaftaran."
+      },
+      {
+        "title": "Mudah Dihubungi",
+        "text": "Telepon, WhatsApp, atau email."
+      },
+      {
+        "title": "Tim yang Ramah",
+        "text": "Siap membantu orang tua dan calon siswa."
+      }
+    ]
+  }
+}

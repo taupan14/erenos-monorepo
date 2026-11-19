@@ -1,0 +1,20 @@
+node_modules
+.pnpm-store
+.next
+.turbo
+.vercel
+out
+next-env.d.ts
+*.tsbuildinfo
+
+# env — jangan pernah di-commit
+.env
+.env.local
+.env.*.local
+
+# Supabase lokal
+supabase/.branches
+supabase/.temp
+supabase/functions/.env
+
+.DS_Store

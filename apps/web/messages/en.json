@@ -1,0 +1,438 @@
+{
+  "meta": {
+    "description": "Erenos Christian School — Faith, Knowledge and Peace. Playgroup–Kindergarten, Elementary, Junior High and Senior High levels.",
+    "homeTitle": "Erenos Christian School — Faith, Knowledge and Peace"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "mainMenu": "Main menu",
+    "mobileMenu": "Mobile menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Choose language",
+    "homeLink": "{name} — home",
+    "carousel": "School highlights",
+    "slideOf": "Slide {n} of {total}",
+    "prevSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "goToSlide": "Go to slide {n}",
+    "breadcrumb": "Breadcrumb"
+  },
+  "topbar": {
+    "badge": "Admissions Open"
+  },
+  "placeholder": {
+    "address": "[School address]",
+    "phone": "[Phone]",
+    "email": "[Email]",
+    "hours": "[Office hours]"
+  },
+  "nav": {
+    "title": "Erenos School",
+    "home": "Home",
+    "about": "About",
+    "academics": "Academics",
+    "facilities": "Facilities",
+    "news": "News",
+    "admission": "Admissions",
+    "contact": "Contact",
+    "register": "Apply"
+  },
+  "mega": {
+    "title": "Education Levels",
+    "text": "One journey of faith and knowledge, from Playgroup to Senior High.",
+    "photo": "Student photo"
+  },
+  "hero": {
+    "defaults": [
+      {
+        "title": "Faith, Knowledge and",
+        "highlight": "Peace",
+        "description": "At Erenos we nurture young minds with Christian values, modern learning, and limitless opportunities.",
+        "primaryLabel": "Admission Info",
+        "primaryHref": "/admisi",
+        "secondaryLabel": "Explore Campus",
+        "secondaryHref": "/fasilitas"
+      },
+      {
+        "title": "Growing in",
+        "highlight": "Knowledge & Character",
+        "description": "A warm learning environment where teachers guide every child according to their potential.",
+        "primaryLabel": "View Levels",
+        "primaryHref": "/akademik",
+        "secondaryLabel": "About Us",
+        "secondaryHref": "/tentang"
+      }
+    ]
+  },
+  "features": [
+    {
+      "title": "Comfortable Classrooms",
+      "text": "Learning supported by technology"
+    },
+    {
+      "title": "Dedicated Teachers",
+      "text": "Educators who guide and inspire"
+    },
+    {
+      "title": "Faith Formation",
+      "text": "Christian values every day"
+    },
+    {
+      "title": "Whole-Child Growth",
+      "text": "Knowledge, character and faith"
+    },
+    {
+      "title": "Complete Facilities",
+      "text": "Labs, library and sports"
+    }
+  ],
+  "welcome": {
+    "kicker": "Welcome to",
+    "excerpt": "[School profile summary: a Christian school that nurtures knowledge, character and faith, from Playgroup to Senior High.]",
+    "button": "Learn More",
+    "photoAlt": "Students and the school building",
+    "photoLabel": "Photo: students & school building"
+  },
+  "stats": {
+    "kicker": "Erenos in numbers",
+    "title": "Growing together, measurable and real",
+    "sample": "Sample numbers — fill in the CMS before publishing the website",
+    "items": [
+      {
+        "label": "Active Students",
+        "text": "Active students across all levels, from Playgroup to Senior High."
+      },
+      {
+        "label": "Certified Teachers",
+        "text": "Educators who hold a professional teaching certificate."
+      },
+      {
+        "label": "Graduation Rate",
+        "text": "Graduation rate across all levels in the most recent school year."
+      }
+    ]
+  },
+  "levels": {
+    "kicker": "Academics",
+    "title": "Explore. Learn. Excel.",
+    "tag": "Level",
+    "cta": "Learn More",
+    "photo": "{name} photo",
+    "items": {
+      "kb_tk": {
+        "name": "Playgroup & Kindergarten",
+        "short": "Playgroup–KG",
+        "summary": "Learning through play and knowing God's love.",
+        "chips": [
+          "Play & exploration",
+          "Character building",
+          "Introduction to faith"
+        ]
+      },
+      "sd": {
+        "name": "Elementary School",
+        "short": "Elementary",
+        "summary": "A strong academic foundation and good habits.",
+        "chips": [
+          "Literacy & numeracy",
+          "Character & faith",
+          "Extracurriculars"
+        ]
+      },
+      "smp": {
+        "name": "Junior High School",
+        "short": "Junior High",
+        "summary": "Discovering interests and building identity.",
+        "chips": ["Interests & talents", "Leadership", "Service"]
+      },
+      "sma": {
+        "name": "Senior High School",
+        "short": "Senior High",
+        "summary": "Preparing for the future with faith.",
+        "chips": ["College preparation", "Leadership", "Service"]
+      }
+    }
+  },
+  "facilities": {
+    "kicker": "Facilities",
+    "title": "Top-Class Infrastructure",
+    "all": "All Facilities",
+    "photo": "{name} photo"
+  },
+  "studentLife": {
+    "kicker": "Student life",
+    "title": "Learning Beyond the Classroom",
+    "all": "View Gallery",
+    "photo": "Student activity photo {n}",
+    "alt": "Student activity"
+  },
+  "news": {
+    "kicker": "News & Activities",
+    "title": "Latest News",
+    "all": "All News",
+    "photo": "Photo"
+  },
+  "cta": {
+    "eyebrow": "New Student Admission",
+    "title": "Join the Erenos family",
+    "button": "Admission Info",
+    "closedEyebrow": "Get to know Erenos",
+    "closedTitle": "Want to get to know Erenos better?",
+    "closedButton": "Contact Us",
+    "model": "Model photo (transparent PNG)",
+    "text": "Give your child the best start. Learn about the process and requirements, and contact our admissions team.",
+    "whatsapp": "Contact via WhatsApp",
+    "chooseLevel": "Choose a level"
+  },
+  "footer": {
+    "links": "Links",
+    "academics": "Academics",
+    "info": "Information",
+    "contact": "Contact",
+    "admissionFlow": "Admission Process",
+    "requirements": "Requirements",
+    "gallery": "Gallery",
+    "cardTitle": "Be a Part of Our Journey",
+    "cardText": "Sign up to receive the latest news and activities from Erenos.",
+    "sealLine1": "Christian School",
+    "sealLine2": "Sekolah Kristen",
+    "rights": "© {year} {name}. All rights reserved.",
+    "motto": "Faith · Knowledge · Peace",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "faq": "FAQs",
+    "social": "Follow us",
+    "newTab": "(opens in a new tab)",
+    "stats": {
+      "todayVisitors": "Today's Visitors",
+      "todayViews": "Today's Views",
+      "totalVisitors": "Total Visitors",
+      "totalViews": "Total Views"
+    }
+  },
+  "newsletter": {
+    "label": "Email address",
+    "placeholder": "Email address",
+    "submit": "Subscribe",
+    "sending": "Sending…",
+    "ok": "Thank you! You are now subscribed.",
+    "invalid": "Please check your email address.",
+    "tooMany": "Too many attempts. Please try again later.",
+    "error": "Something went wrong. Please try again.",
+    "network": "Unable to connect. Please check your connection."
+  },
+  "whatsapp": {
+    "label": "Chat via WhatsApp",
+    "text": "Hello, I would like to ask about Erenos Christian School."
+  },
+  "legal": {
+    "placeholder": "[This page content will be available soon.]"
+  },
+  "faqPage": {
+    "intro": "Answers to the questions we hear most often.",
+    "empty": "Frequently asked questions will be available soon.",
+    "contact": "Can't find your answer?",
+    "contactCta": "Contact Us"
+  },
+  "notFound": {
+    "code": "Error 404",
+    "title": "Page not found",
+    "text": "The page you are looking for is not available yet or has been moved. Please return to the home page.",
+    "back": "Back to Home"
+  },
+  "pages": {
+    "about": {
+      "title": "About",
+      "highlight": "Us"
+    },
+    "academics": {
+      "title": "Education",
+      "highlight": "Levels"
+    },
+    "facilities": {
+      "title": "School",
+      "highlight": "Facilities"
+    },
+    "news": {
+      "title": "News &",
+      "highlight": "Activities"
+    },
+    "gallery": {
+      "title": "Photo",
+      "highlight": "Gallery"
+    },
+    "admission": {
+      "title": "New Student",
+      "highlight": "Admission"
+    },
+    "contact": {
+      "title": "Contact",
+      "highlight": "Us"
+    },
+    "privacy": {
+      "title": "Privacy",
+      "highlight": "Policy"
+    },
+    "terms": {
+      "title": "Terms &",
+      "highlight": "Conditions"
+    },
+    "faq": {
+      "title": "Frequently Asked",
+      "highlight": "Questions"
+    }
+  },
+  "seo": {
+    "about": "Get to know Erenos Christian School: profile, vision and mission, Christian values, the principal's message, and history.",
+    "academics": "Erenos education levels: Playgroup–Kindergarten, Elementary, Junior High and Senior High in one journey of faith and knowledge.",
+    "facilities": "Erenos Christian School facilities that help children grow.",
+    "news": "Latest news and activities from Erenos Christian School.",
+    "gallery": "Photo gallery of Erenos Christian School activities.",
+    "admission": "Erenos admission information: process, requirements, and frequently asked questions.",
+    "contact": "Contact Erenos Christian School: address, phone, email, and message form.",
+    "privacy": "How Erenos Christian School collects, uses and protects personal data.",
+    "terms": "Terms and conditions for using the Erenos Christian School website.",
+    "faq": "Answers to frequently asked questions about Erenos Christian School and admissions."
+  },
+  "about": {
+    "profile": "School profile",
+    "profilePlaceholder": "[School profile: year founded, foundation, levels, and spirit of service.]",
+    "photoSchool": "School photo",
+    "vision": "Vision",
+    "visionTitle": "Erenos Vision",
+    "visionPlaceholder": "[School vision text]",
+    "mission": "Mission",
+    "missionTitle": "Erenos Mission",
+    "missionPlaceholder": "[School mission text]",
+    "values": "Christian Values",
+    "valuesTitle": "The foundation of our education",
+    "message": "Principal's message",
+    "messagePlaceholder": "[Principal's message]",
+    "principal": "Principal",
+    "photoPrincipal": "Principal photo",
+    "history": "History",
+    "historyTitle": "Our journey"
+  },
+  "level": {
+    "intro": "Introduction",
+    "introTitle": "A strong foundation from the start",
+    "introPlaceholder": "[Level introduction: educational goals, learning atmosphere, and teaching approach.]",
+    "programs": "Learning programs",
+    "programsTitle": "What is learned & developed",
+    "activities": "Activities",
+    "activitiesTitle": "Activities at {name}",
+    "ctaTitle": "Interested in enrolling your child?",
+    "ctaButton": "View Admissions",
+    "listIntro": "Four levels of education in one journey of faith and knowledge.",
+    "tabs": "Choose a level"
+  },
+  "facilitiesPage": {
+    "intro": "An environment that helps children grow.",
+    "empty": "Facility information will be available soon.",
+    "emptyCta": "Contact Us"
+  },
+  "newsPage": {
+    "all": "All",
+    "searchLabel": "Search news",
+    "searchPlaceholder": "Search news…",
+    "searchButton": "Search",
+    "featured": "Featured",
+    "readMore": "Read more",
+    "empty": "No matching news yet.",
+    "emptyHint": "Try another keyword or category.",
+    "prev": "Previous",
+    "next": "Next",
+    "pageOf": "Page {n} of {total}",
+    "pagination": "Page navigation",
+    "by": "By {name}",
+    "back": "Back to news",
+    "share": "Share",
+    "copyLink": "Copy link",
+    "copied": "Copied!",
+    "related": "Related news",
+    "categories": "Categories",
+    "languageNote": "News articles are published in Indonesian."
+  },
+  "gallery": {
+    "empty": "Photo albums will be available soon. Below is a sample of how they will look.",
+    "photoCount": "{n} photos",
+    "back": "Back to gallery",
+    "open": "Open photo {n}",
+    "close": "Close",
+    "prev": "Previous photo",
+    "next": "Next photo",
+    "counter": "{n} / {total}",
+    "dialog": "Photo viewer",
+    "thumbs": "Choose photo",
+    "emptyAlbum": "This album has no photos yet. Below is a sample of how it will look.",
+    "sampleTitle": "Activity album {n}",
+    "samplePhoto": "Sample photo {n}"
+  },
+  "admission": {
+    "flowTitle": "Admission process",
+    "flowEmpty": "Admission process information will be available soon.",
+    "reqTitle": "Requirements",
+    "reqDoc": "Document",
+    "reqEmpty": "Requirement information will be available soon. Please contact the admissions team.",
+    "faqTitle": "Frequently asked questions",
+    "notesTitle": "Notes",
+    "closedNotice": "Admissions are not open at the moment. You can still send us a question.",
+    "formTitle": "Send an Inquiry",
+    "formIntro": "Our admissions team will get in touch with you."
+  },
+  "forms": {
+    "parentName": "Parent's name",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone / WhatsApp",
+    "studentName": "Prospective student's name",
+    "level": "Level of interest",
+    "levelPlaceholder": "Choose a level",
+    "subject": "Subject",
+    "message": "Message",
+    "submitAdmission": "Send Inquiry",
+    "submitContact": "Send Message",
+    "sending": "Sending…",
+    "successTitle": "Thank you!",
+    "successText": "We have received your message and will get back to you soon.",
+    "sendAnother": "Send another message",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorNetwork": "Unable to connect. Please check your connection.",
+    "errorTooMany": "Too many attempts. Please try again later.",
+    "needContact": "Please provide an email or phone/WhatsApp number."
+  },
+  "contact": {
+    "eyebrow": "Contact us",
+    "headingA": "Send Us ",
+    "headingB": "a Message",
+    "namePlaceholder": "e.g. John Smith",
+    "emailPlaceholder": "name@example.com",
+    "phonePlaceholder": "+62 …",
+    "subjectPlaceholder": "Enter subject",
+    "messagePlaceholder": "Write your message here…",
+    "address": "Address",
+    "contactTitle": "Contact",
+    "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Email",
+    "hours": "Office Hours",
+    "connect": "Stay Connected",
+    "mapTitle": "School location map",
+    "mapPlaceholder": "Google Maps — set the embed URL in site settings",
+    "benefits": [
+      {
+        "title": "Complete Information",
+        "text": "Questions about programs and admission."
+      },
+      {
+        "title": "Easy to Reach",
+        "text": "Phone, WhatsApp, or email."
+      },
+      {
+        "title": "Friendly Team",
+        "text": "Ready to help parents and prospective students."
+      }
+    ]
+  }
+}
