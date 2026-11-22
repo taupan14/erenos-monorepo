@@ -19,13 +19,14 @@ const NAV: Item[] = [
     ready: true,
     roles: ["super_admin"],
   },
+  { href: "/buletin", label: "Buletin", ready: true, roles: ["super_admin"] },
   {
     href: "/pengaturan",
     label: "Pengaturan",
     ready: true,
     roles: ["super_admin"],
   },
-  { href: "/akun", label: "Akun", ready: false, roles: ["super_admin"] },
+  { href: "/akun", label: "Akun", ready: true, roles: ["super_admin"] },
 ];
 
 const BASE =

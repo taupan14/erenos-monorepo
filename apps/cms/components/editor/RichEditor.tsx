@@ -11,7 +11,16 @@ import { mediaPublicUrl } from "@/lib/media";
  * Editor rich-text (Tiptap). Hanya memakai format yang diizinkan sanitizer website:
  * h2–h4, tebal/miring/garis bawah, daftar, kutipan, tautan, gambar. HTML dikirim lewat <input hidden>.
  */
-export function RichEditor({ name, initialHtml }: { name: string; initialHtml: string }) {
+export function RichEditor({
+  name,
+  initialHtml,
+  onChange,
+}: {
+  name: string;
+  initialHtml: string;
+  /** Dipanggil setiap isi berubah (mis. untuk pratinjau langsung). */
+  onChange?: (html: string) => void;
+}) {
   const [html, setHtml] = useState(initialHtml);
   const [pickOpen, setPickOpen] = useState(false);
 
@@ -35,12 +44,19 @@ export function RichEditor({ name, initialHtml }: { name: string; initialHtml: s
         "aria-label": "Isi",
       },
     },
-    onUpdate: ({ editor: e }) => setHtml(e.isEmpty ? "" : e.getHTML()),
+    onUpdate: ({ editor: e }) => {
+      const next = e.isEmpty ? "" : e.getHTML();
+      setHtml(next);
+      onChange?.(next);
+    },
   });
 
   function setLink(e: Editor) {
     const prev = (e.getAttributes("link").href as string | undefined) ?? "";
-    const url = window.prompt("Alamat tautan (kosongkan untuk menghapus)", prev);
+    const url = window.prompt(
+      "Alamat tautan (kosongkan untuk menghapus)",
+      prev,
+    );
     if (url === null) return;
     const v = url.trim();
     if (v === "") {
@@ -56,16 +72,76 @@ export function RichEditor({ name, initialHtml }: { name: string; initialHtml: s
 
   const tools = editor
     ? [
-        { label: "B", title: "Tebal", active: editor.isActive("bold"), run: () => editor.chain().focus().toggleBold().run(), cls: "font-bold" },
-        { label: "I", title: "Miring", active: editor.isActive("italic"), run: () => editor.chain().focus().toggleItalic().run(), cls: "italic" },
-        { label: "U", title: "Garis bawah", active: editor.isActive("underline"), run: () => editor.chain().focus().toggleUnderline().run(), cls: "underline" },
-        { label: "H2", title: "Judul bagian", active: editor.isActive("heading", { level: 2 }), run: () => editor.chain().focus().toggleHeading({ level: 2 }).run(), cls: "" },
-        { label: "H3", title: "Sub judul", active: editor.isActive("heading", { level: 3 }), run: () => editor.chain().focus().toggleHeading({ level: 3 }).run(), cls: "" },
-        { label: "• Daftar", title: "Daftar poin", active: editor.isActive("bulletList"), run: () => editor.chain().focus().toggleBulletList().run(), cls: "" },
-        { label: "1. Daftar", title: "Daftar bernomor", active: editor.isActive("orderedList"), run: () => editor.chain().focus().toggleOrderedList().run(), cls: "" },
-        { label: "Kutipan", title: "Kutipan", active: editor.isActive("blockquote"), run: () => editor.chain().focus().toggleBlockquote().run(), cls: "" },
-        { label: "Tautan", title: "Tautan", active: editor.isActive("link"), run: () => setLink(editor), cls: "" },
-        { label: "Gambar", title: "Sisipkan gambar dari Media", active: false, run: () => setPickOpen(true), cls: "" },
+        {
+          label: "B",
+          title: "Tebal",
+          active: editor.isActive("bold"),
+          run: () => editor.chain().focus().toggleBold().run(),
+          cls: "font-bold",
+        },
+        {
+          label: "I",
+          title: "Miring",
+          active: editor.isActive("italic"),
+          run: () => editor.chain().focus().toggleItalic().run(),
+          cls: "italic",
+        },
+        {
+          label: "U",
+          title: "Garis bawah",
+          active: editor.isActive("underline"),
+          run: () => editor.chain().focus().toggleUnderline().run(),
+          cls: "underline",
+        },
+        {
+          label: "H2",
+          title: "Judul bagian",
+          active: editor.isActive("heading", { level: 2 }),
+          run: () => editor.chain().focus().toggleHeading({ level: 2 }).run(),
+          cls: "",
+        },
+        {
+          label: "H3",
+          title: "Sub judul",
+          active: editor.isActive("heading", { level: 3 }),
+          run: () => editor.chain().focus().toggleHeading({ level: 3 }).run(),
+          cls: "",
+        },
+        {
+          label: "• Daftar",
+          title: "Daftar poin",
+          active: editor.isActive("bulletList"),
+          run: () => editor.chain().focus().toggleBulletList().run(),
+          cls: "",
+        },
+        {
+          label: "1. Daftar",
+          title: "Daftar bernomor",
+          active: editor.isActive("orderedList"),
+          run: () => editor.chain().focus().toggleOrderedList().run(),
+          cls: "",
+        },
+        {
+          label: "Kutipan",
+          title: "Kutipan",
+          active: editor.isActive("blockquote"),
+          run: () => editor.chain().focus().toggleBlockquote().run(),
+          cls: "",
+        },
+        {
+          label: "Tautan",
+          title: "Tautan",
+          active: editor.isActive("link"),
+          run: () => setLink(editor),
+          cls: "",
+        },
+        {
+          label: "Gambar",
+          title: "Sisipkan gambar dari Media",
+          active: false,
+          run: () => setPickOpen(true),
+          cls: "",
+        },
       ]
     : [];
 
@@ -95,7 +171,11 @@ export function RichEditor({ name, initialHtml }: { name: string; initialHtml: s
         open={pickOpen}
         onClose={() => setPickOpen(false)}
         onPick={(m) => {
-          editor?.chain().focus().setImage({ src: mediaPublicUrl(m.path), alt: m.alt_text ?? "" }).run();
+          editor
+            ?.chain()
+            .focus()
+            .setImage({ src: mediaPublicUrl(m.path), alt: m.alt_text ?? "" })
+            .run();
           setPickOpen(false);
         }}
       />

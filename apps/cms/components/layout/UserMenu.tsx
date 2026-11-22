@@ -1,9 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { signOut } from "@/app/login/actions";
 
-type Props = { initials: string; name: string; email: string; roleLabel: string };
+type Props = {
+  initials: string;
+  name: string;
+  email: string;
+  roleLabel: string;
+};
 
 export function UserMenu({ initials, name, email, roleLabel }: Props) {
   const [open, setOpen] = useState(false);
@@ -47,7 +53,14 @@ export function UserMenu({ initials, name, email, roleLabel }: Props) {
           <span className="mt-2 inline-block rounded-full bg-soft px-2.5 py-1 text-xs font-semibold text-primary">
             {roleLabel}
           </span>
-          <form action={signOut} className="mt-4 border-t border-line pt-3">
+          <Link
+            href="/profil"
+            onClick={() => setOpen(false)}
+            className="mt-4 flex h-11 w-full items-center justify-center rounded-lg border border-line text-sm font-medium hover:bg-soft"
+          >
+            Profil &amp; kata sandi
+          </Link>
+          <form action={signOut} className="mt-2">
             <button
               type="submit"
               className="h-11 w-full rounded-lg border border-line text-sm font-medium hover:bg-soft"

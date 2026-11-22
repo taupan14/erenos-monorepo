@@ -72,7 +72,7 @@ export function HeroSlider({ slides }: { slides: HeroSlideView[] }) {
     <section
       aria-roledescription="carousel"
       aria-label={m.a11y.carousel}
-      className="relative h-[520px] overflow-hidden bg-[#27468f] text-white md:h-[720px]"
+      className="relative h-[520px] overflow-hidden bg-[#27468f] text-white md:h-[620px]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}

@@ -12,6 +12,7 @@ import { LOGO } from "@/lib/site";
 import type { SiteSettings } from "@/lib/types";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { NewsletterForm } from "./NewsletterForm";
+import { VisitorStats } from "./VisitorStats";
 
 const headingCls = "mb-4 text-[15px] font-semibold text-white";
 const linkCls =
@@ -65,15 +66,6 @@ export async function SiteFooter({
   );
 
   const stats = await getVisitorStats();
-  const nf = new Intl.NumberFormat(locale === "en" ? "en-US" : "id-ID");
-  const statItems: [string, number][] = stats
-    ? [
-        [m.footer.stats.todayVisitors, stats.todayVisitors],
-        [m.footer.stats.todayViews, stats.todayViews],
-        [m.footer.stats.totalVisitors, stats.totalVisitors],
-        [m.footer.stats.totalViews, stats.totalViews],
-      ]
-    : [];
 
   return (
     <footer className="relative mt-24 bg-deep text-[#c9d7f2]">
@@ -225,20 +217,7 @@ export async function SiteFooter({
           </div>
         </div>
 
-        {statItems.length > 0 && (
-          <dl className="grid grid-cols-2 gap-x-4 gap-y-5 border-t border-white/15 py-6 sm:grid-cols-4">
-            {statItems.map(([label, value]) => (
-              <div key={label} className="flex flex-col-reverse">
-                <dt className="text-[11px] uppercase tracking-[0.12em]">
-                  {label}
-                </dt>
-                <dd className="font-serif text-2xl font-bold text-white">
-                  {nf.format(value)}
-                </dd>
-              </div>
-            ))}
-          </dl>
-        )}
+        <VisitorStats initial={stats} labels={m.footer.stats} locale={locale} />
 
         <div className="flex flex-col items-start justify-between gap-3 border-t border-white/15 py-4 text-xs sm:flex-row sm:items-center">
           <span>
